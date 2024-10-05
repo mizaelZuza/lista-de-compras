@@ -1,4 +1,12 @@
+import { adicionarDataHora } from "./adicionarDataHora.js";
+import { editarItem } from "./editarItem.js";
+import { excluirItem } from "./excluirItem.js";
+import { verificarListaComprados } from "./verificarListaComprados.js";
+
+const listaDeCompras = document.getElementById("lista-compras");
 const listaComprados = document.getElementById("lista-comprados");
+
+
 let contador = 0;
 
 export function criarItemDaLista(item){
@@ -28,11 +36,14 @@ export function criarItemDaLista(item){
             checkboxCustomizado.classList.add("checked");
             itemTitulo.style.textDecoration = "line-through";
             listaComprados.appendChild(listaItem);
+            
+
         } else{
             checkboxCustomizado.classList.remove("checked");
             itemTitulo.style.textDecoration= "none";
             listaDeCompras.appendChild(listaItem);
         }
+        verificarListaComprados(listaComprados);
     });
     
     const checkboxCustomizado = document.createElement("div");
@@ -56,6 +67,11 @@ export function criarItemDaLista(item){
     const imagemRemover = document.createElement("img");
     imagemRemover.src = "./img/delete.svg";
     imagemRemover.alt = "Deletar";
+
+    botaoRemover.addEventListener("click", function(){
+        excluirItem(listaItem);
+    }) 
+
     botaoRemover.appendChild(imagemRemover);
     
     const botaoAlterar = document.createElement("button");
@@ -63,19 +79,22 @@ export function criarItemDaLista(item){
     const imagemAlterar = document.createElement("img");
     imagemAlterar.src = "./img/edit.svg";
     imagemAlterar.alt = "Editar";
-    botaoAlterar.appendChild(imagemAlterar);
     
+    botaoAlterar.addEventListener("click", function(){
+        editarItem(listaItem);
+    });
 
-    
+    botaoAlterar.appendChild(imagemAlterar);
+        
     listaItem.appendChild(containerListaItem);
     containerListaItem.appendChild(containerNomeItem);
     containerListaItem.appendChild(containerBotoes);
-    
-    const itemData = document.createElement("p");
-    itemData.innerText = `${new Date().toLocaleDateString("pt-BR", {weekday: "long"})} ${new Date().toLocaleDateString()} às ${new Date().toLocaleTimeString("pt-BR", {hour: "numeric", minute: "numeric"})}`;
-    itemData.classList.add("item-lista-texto");
-    
+
+    const itemData = document.createElement("p"); 
+    itemData.innerText = adicionarDataHora();
+    itemData.classList.add("texto-data"); 
     listaItem.appendChild(itemData);
+    
     containerNomeItem.appendChild(nomeItem);
     containerBotoes.appendChild(botaoRemover);
     containerBotoes.appendChild(botaoAlterar);
