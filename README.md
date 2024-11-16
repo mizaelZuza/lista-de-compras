@@ -1,34 +1,32 @@
+**Título**: Projeto em JavaScript
 
-![Descricao da sua imagem](https://imgur.com/C8TfWXc.png)
+**Descrição**: Este é um projeto de desenvolvimento web feito em JavaScript, que inclui funcionalidades como adicionar itens, editar itens e verificar lista de comprados.
 
-# Titulo do projeto
+**Funcionamento**:
 
-Aplicação web de lista de compras para o curso de construção de páginas dinâmicas com JavaScript.
+* O projeto utiliza uma estrutura básica de HTML, CSS e JavaScript para criar uma interface de usuário interativa.
+* As funcionalidades do projeto são implementadas utilizando funções e event listeners em JavaScript.
 
-## 🔨 Funcionalidades do projeto
+**Características**:
 
-A aplicação permite inserir itens em uma lista de forma dinâmica, permitindo a exclusão e edição dos mesmos. Os itens terão o nome e também a data e horário que foram criados. Também é possível selecionar um checkbox para informar que o item foi comprado.
+* Adicionar itens: permite adicionar novos itens à lista.
+* Editar itens: permite editar o ítem da lista.
+* Verificar lista de comprados: verifica se há itens na lista e exibe ou oculta a área de visualização da lista.
 
-![Inserção no campo de digitação do valor ração de gato, após, é clicado no botão de edição, onde é aberto um popup para digitar o novo do nome item, que foi digitado ração de cachorro. Em seguida, é clicado no botão de exclusão, e o item é excluído.](https://imgur.com/isPj7Xf.gif)
+**Como funciona**:
 
-## ✔️ Técnicas e tecnologias utilizadas
+1. Abra o projeto em um navegador.
+2. Utilize as funcionalidades disponíveis para adicionar, editar e verificar a lista de comprados.
 
-As técnicas e tecnologias utilizadas pra isso são:
+**Arquivos do projeto**:
 
-- `HTML`: criação dos elementos da tela;
-- `CSS`: estilização da aplicação;
-- `JavaScript`: construção de elementos dinâmicos através da manipulação do DOM.
+* `index.html`: arquivo principal que contém a estrutura HTML do projeto.
+* `styles.css`: arquivo de estilo que define a aparência visual do projeto.
+* `script.js`: arquivo de JavaScript que contém as funções e event listeners que implementam as funcionalidades do projeto.
 
-## 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/alura-cursos/3801-javascript-para-web/tree/projeto-base) ou [baixá-lo](https://github.com/alura-cursos/3801-javascript-para-web/archive/refs/heads/projeto-base.zip).
+**Contribuições**: Se você quiser contribuir com o projeto ou melhorá-lo, por favor envie uma solicitação no GitHub ou em um e-mail para mizael.zuza.estudos@gmail.com.
 
-## 🛠️ Abrir e rodar o projeto
+**Contato**: Para mais informações sobre o projeto ou para solicitar suporte, entre em contato comigo em mizael.zuza.estudos@gmail.com ou nos canais de comunicação do GitHub.
 
-Após baixar o projeto, você pode abrir com o Visual Studio Code. Para isso, no menu superior, clique em:
-
-- **File** > **Open Folder** (ou alguma opção similar)
-- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
-- Por fim clique em OK
-
-Ao finalizar esses passos, você pode executar a aplicação com a extensão Live Server 🏆 
+Espero que isso ajude! Se tiver alguma dúvida ou precisar de mais ajuda, basta perguntar.
